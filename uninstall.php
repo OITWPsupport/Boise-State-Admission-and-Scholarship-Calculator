@@ -10,9 +10,11 @@ for ($i = 0; $i < $options.count(); $i++) {
 	delete_option($options[$i]);
 	delete_site_option($options[$i]);
 }
+
+delete_option("message_I");
  
 // drop a custom database table
-global $wpdb;
-$wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}mytable");
+//global $wpdb;
+//$wpdb->query("DROP TABLE IF EXISTS {$wpdb->prefix}mytable");
 
 ?>
