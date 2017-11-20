@@ -5,6 +5,7 @@ if (!defined('WP_UNINSTALL_PLUGIN')) {
 }
 
 $option1 = 'message_I';
+delete_option($option1);
 delete_site_option($option1);
 
 $options = array("message_I", "message_II", "message_III", "message_IV", "low_score", "mid_score", "high_score"); 
