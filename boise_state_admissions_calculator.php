@@ -277,19 +277,6 @@ function boise_state_sc_admin_settings_page_display() {
 	if ( ! current_user_can( 'manage_options' ) ) {
 		wp_die('You do not have sufficient permissions to access this page.');
 	}
-	// set defaults if needed
-	if ( get_option( 'message_I' ) === false ) { // Nothing yet saved
-   	 	update_option( 'message_I', "The GPA or ACT/SAT score you’ve provided is below the minimum requirement for the 
-	<a href='http://financialaid.boisestate.edu/scholarships/non-resident-tuition-assistance-programs/' 
-	target='_blank' title='Western Exchange Scholarship Program'>Western Exchange Scholarship Program</a>
-	and/or <a href='http://financialaid.boisestate.edu/scholarships/non-resident-tuition-assistance-programs/' 
-	target='_blank' title='GEM nonresident tuition scholarship'>GEM nonresident tuition scholarship</a>.
-	Scholarship recipients must have a minimum 3.20 cumulative unweighted high school GPA and ACT composite
-	21 or SAT critical reading and math combined 980 to qualify for consideration. If your GPA and/or test
-	scores improve, you may resubmit them before the December 15th Non-Resident Priority Date.&nbsp;Be sure
-	to review Boise State’s <a href='http://financialaid.boisestate.edu/scholarships/how-to-apply/' target='_blank'
-	title='scholarship checklist'>scholarship checklist</a> to view all <strong>scholarship options</strong>." );
-	}
 	?>
 	<div class="wrap">
 	<h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
